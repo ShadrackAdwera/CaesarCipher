@@ -4,8 +4,15 @@ import static org.junit.Assert.*;
 
 public class EncryptTest {
     @Test
+    public void encryptionDecryption_savesMessage_String() {
+        EncryptDecrypt testVal = new EncryptDecrypt("hello",3);
+        assertEquals("hello", testVal.getTextMessage());
+    }
+
+    @Test
     public void encryption_objectInstantiates() {
-        EncryptDecrypt enc = new EncryptDecrypt("hello",3);
-        assertEquals(true, enc instanceof EncryptDecrypt);
+        EncryptDecrypt testVal = new EncryptDecrypt("hello",3);
+        assertEquals(true, testVal instanceof EncryptDecrypt);
+
     }
 }

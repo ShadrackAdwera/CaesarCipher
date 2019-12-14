@@ -22,6 +22,12 @@ public class EncryptTest {
     }
 
     @Test
+    public void encryptDecrypt_decipherText_String() {
+        EncryptDecrypt testVal = new EncryptDecrypt("khoor",3);
+        assertEquals("hello",testVal.decryption());
+    }
+
+    @Test
     public void encryptDecrypt_objectInstantiates() {
         EncryptDecrypt testVal = new EncryptDecrypt("hello",3);
         assertEquals(true, testVal instanceof EncryptDecrypt);

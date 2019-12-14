@@ -9,4 +9,7 @@ this.shiftBy = shiftBy;
 public String getTextMessage(){
     return this.textMessage;
 }
+public int getShiftBy(){
+    return 3;
+}
 }

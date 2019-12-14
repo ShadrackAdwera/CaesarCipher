@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-#### The following is an implementation of the Caesar Cipher named after the famous Julius Caesar. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a right shift of 3, A would be replaced by D, B would become E, and so on. 
+#### The following is an implementation of the Caesar Cipher named after the famous Julius Caesar. It is a type of substitution cipher in which each letter in the plaintext is replaced by some other letter some fixed number of positions down the alphabet. For example, with a right shift of 3, A would be replaced by D, B would become E, and so on. 
 
 #### By Shadrack Adwera
 
@@ -15,6 +15,14 @@ The [ASCII code](http://www.asciitable.com/) was used to find the position of a 
 * An online Java editor and IDE can also be used such as: [REPL it](https://repl.it/languages/java10)
 
 ## Coded Specs
+
+|   TEST                                                   | RESULT                     |
+|:--------------------------------------------------------:| :-------------------------:|
+| Constructor instantiates correctly                       | True                       |
+| Getter method defined stores the plain text              | Returns a String value     |
+| Getter method defined stores the shift value             | Returns an integer value   |
+| Method shifts text forward: input "hello"                | Returns "khoor"            |
+| Method to shift text backwards(decipher): input "khoor"  | Returns "hello"            |
 
  
 

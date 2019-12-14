@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 public class EncryptTest {
     @Test
     public void encryption_objectInstantiates() {
-        Encrypt enc = new Encrypt();
-        assertEquals(true, enc instanceof Encrypt);
+        EncryptDecrypt enc = new EncryptDecrypt("hello",3);
+        assertEquals(true, enc instanceof EncryptDecrypt);
     }
 }

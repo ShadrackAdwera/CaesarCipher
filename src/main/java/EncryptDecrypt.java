@@ -10,6 +10,20 @@ public String getTextMessage(){
     return this.textMessage;
 }
 public int getShiftBy(){
-    return 3;
+    return this.shiftBy;
+}
+public String encryption(){
+    StringBuilder result = new StringBuilder();
+    for (char character : textMessage.toCharArray()) {
+        if (character != ' ') {
+            int asciiPosition = character - 'a';
+            int newPosition = (asciiPosition + shiftBy) % 26;
+            char newCharacter = (char) ('a' + newPosition);
+            result.append(newCharacter);
+        } else {
+            result.append(character);
+        }
+    }
+    return result.toString();
 }
 }

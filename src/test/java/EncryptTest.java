@@ -16,6 +16,12 @@ public class EncryptTest {
     }
 
     @Test
+    public void encryptDecrypt_ShiftsTextForward_StringBuilder() {
+        EncryptDecrypt testVal = new EncryptDecrypt("hello",3);
+        assertEquals("khoor", testVal.encryption());
+    }
+
+    @Test
     public void encryptDecrypt_objectInstantiates() {
         EncryptDecrypt testVal = new EncryptDecrypt("hello",3);
         assertEquals(true, testVal instanceof EncryptDecrypt);

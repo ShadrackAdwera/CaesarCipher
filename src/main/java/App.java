@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         System.out.println("WELCOME TO THE CAESAR CIPHER");
-        while(true) {
+        while (true) {
             System.out.println("CHOSE e for ENCRYPTION or d FOR decryption");
             Scanner input = new Scanner(System.in);
             String choice = input.nextLine().toLowerCase();
